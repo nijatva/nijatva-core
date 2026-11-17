@@ -1,0 +1,173 @@
+{
+  "owner": "vasudev-work",
+  "apps": [
+    {
+      "code": "Ap",
+      "name": "App Manager",
+      "site": "appmanager",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Br",
+      "name": "Browser",
+      "site": "browser",
+      "repo": "nijatva-browser",
+      "package": "in.nijatva.browser"
+    },
+    {
+      "code": "Ca",
+      "name": "Calculator",
+      "site": "calc",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Cl",
+      "name": "Calendar",
+      "site": "calendar",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Cm",
+      "name": "Camera",
+      "site": "camera",
+      "repo": "nijatva-camera",
+      "package": "com.nijatva.camera"
+    },
+    {
+      "code": "Ck",
+      "name": "Clock",
+      "site": "clock",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Co",
+      "name": "Contacts",
+      "site": "contacts",
+      "repo": "nijatva-contacts",
+      "package": "com.nijatva.contacts"
+    },
+    {
+      "code": "Di",
+      "name": "Dialer",
+      "site": "dialer",
+      "repo": "nijatva-dialer",
+      "package": "com.nijatva.dialer"
+    },
+    {
+      "code": "De",
+      "name": "Device Info",
+      "site": "deviceinfo",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Ex",
+      "name": "Expenses",
+      "site": "expenses",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Fi",
+      "name": "Files",
+      "site": "files",
+      "repo": "nijatva-file",
+      "package": "com.nijatva.file"
+    },
+    {
+      "code": "Ga",
+      "name": "Gallery",
+      "site": "gallery",
+      "repo": "nijatva-gallery",
+      "package": "com.nijatva.gallery"
+    },
+    {
+      "code": "Kb",
+      "name": "Keyboard",
+      "site": "keyboard",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "La",
+      "name": "Launcher",
+      "site": "launcher",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Mu",
+      "name": "Music",
+      "site": "music",
+      "repo": "nijatva-music-player",
+      "package": "com.nijatva.music.player"
+    },
+    {
+      "code": "No",
+      "name": "Notes",
+      "site": "notes",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Pd",
+      "name": "PDF",
+      "site": "pdf",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Qr",
+      "name": "QR Code",
+      "site": "qr",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Re",
+      "name": "Recorder",
+      "site": "recorder",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Rs",
+      "name": "RSS",
+      "site": "rss",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Me",
+      "name": "Messages",
+      "site": "sms",
+      "repo": "nijatva-messages",
+      "package": "com.nijatva.messages"
+    },
+    {
+      "code": "Ta",
+      "name": "Tasks",
+      "site": "tasks",
+      "repo": null,
+      "package": ""
+    },
+    {
+      "code": "Va",
+      "name": "Vault",
+      "site": "vault",
+      "repo": "nijatva-drive",
+      "package": ""
+    },
+    {
+      "code": "We",
+      "name": "Weather",
+      "site": "weather",
+      "repo": null,
+      "package": ""
+    }
+  ]
+}

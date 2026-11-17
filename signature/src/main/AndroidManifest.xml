@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      The two signature screens are declared here, in the library, so every app in the
+      suite gets them through manifest merging — no per-app manifest editing.
+
+      They are not exported: they are opened from the app's own settings with
+      Signature.appearance(context) / Signature.developer(context).
+    -->
+    <application>
+        <activity
+            android:name="com.nijatva.signature.SignatureAppearanceActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity
+            android:name="com.nijatva.signature.SignatureDeveloperActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+    </application>
+
+    <!-- Package visibility for the sibling apps the Developer card reports on.
+         Android 11+ hides other packages unless they are declared. -->
+    <queries>
+        <package android:name="com.nijatva.photos" />
+        <package android:name="com.nijatva.gallery" />
+        <package android:name="com.nijatva.camera" />
+        <package android:name="com.nijatva.photo.editor" />
+        <package android:name="com.nijatva.videoplayer" />
+        <package android:name="com.nijatva.music.player" />
+        <package android:name="com.nijatva.file" />
+        <package android:name="in.nijatva.browser" />
+        <package android:name="com.nijatva.mini.x" />
+        <package android:name="com.nijatva.wtrlab" />
+        <package android:name="com.nijatva.messages" />
+        <package android:name="com.nijatva.contacts" />
+        <package android:name="com.nijatva.dialer" />
+        <package android:name="com.nijatva.drive" />
+    </queries>
+</manifest>
