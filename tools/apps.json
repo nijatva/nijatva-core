@@ -110,8 +110,8 @@
       "code": "No",
       "name": "Notes",
       "site": "notes",
-      "repo": null,
-      "package": ""
+      "repo": "nijatva-notes",
+      "package": "in.devira.nijatva.notes"
     },
     {
       "code": "Pd",
