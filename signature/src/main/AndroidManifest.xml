@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
+      Without this line the manifest merger reads a missing targetSdkVersion as
+      "targetSdk < 4" and adds READ_PHONE_STATE, READ_EXTERNAL_STORAGE and
+      WRITE_EXTERNAL_STORAGE to every app that depends on the kit.
+    -->
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+
+    <!--
       The two signature screens are declared here, in the library, so every app in the
       suite gets them through manifest merging — no per-app manifest editing.
 

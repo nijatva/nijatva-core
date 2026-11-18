@@ -1,5 +1,5 @@
 {
-  "owner": "nijatva",
+  "owner": "vasudev-work",
   "apps": [
     {
       "code": "Ap",
@@ -19,8 +19,8 @@
       "code": "Ca",
       "name": "Calculator",
       "site": "calc",
-      "repo": null,
-      "package": ""
+      "repo": "nijatva-calc",
+      "package": "com.nijatva.calc"
     },
     {
       "code": "Cl",
@@ -51,18 +51,18 @@
       "package": "com.nijatva.contacts"
     },
     {
-      "code": "De",
-      "name": "Device Info",
-      "site": "deviceinfo",
-      "repo": null,
-      "package": ""
-    },
-    {
       "code": "Di",
       "name": "Dialer",
       "site": "dialer",
       "repo": "nijatva-dialer",
       "package": "com.nijatva.dialer"
+    },
+    {
+      "code": "De",
+      "name": "Device Info",
+      "site": "deviceinfo",
+      "repo": null,
+      "package": ""
     },
     {
       "code": "Ex",
@@ -100,20 +100,6 @@
       "package": ""
     },
     {
-      "code": "Me",
-      "name": "Messages",
-      "site": "sms",
-      "repo": "nijatva-messages",
-      "package": "com.nijatva.messages"
-    },
-    {
-      "code": "Mx",
-      "name": "Mini X",
-      "site": "minix",
-      "repo": "nijatva-browser-mini-x",
-      "package": "com.nijatva.mini.x"
-    },
-    {
       "code": "Mu",
       "name": "Music",
       "site": "music",
@@ -124,8 +110,8 @@
       "code": "No",
       "name": "Notes",
       "site": "notes",
-      "repo": "nijatva-notes",
-      "package": "com.nijatva.notes"
+      "repo": null,
+      "package": ""
     },
     {
       "code": "Pd",
@@ -133,20 +119,6 @@
       "site": "pdf",
       "repo": null,
       "package": ""
-    },
-    {
-      "code": "Pe",
-      "name": "Photo Editor",
-      "site": "editor",
-      "repo": "nijatva-photo-editor",
-      "package": "com.nijatva.photo.editor"
-    },
-    {
-      "code": "Ph",
-      "name": "Photos",
-      "site": "photos",
-      "repo": "nijatva-photos",
-      "package": "com.nijatva.photos"
     },
     {
       "code": "Qr",
@@ -170,6 +142,13 @@
       "package": ""
     },
     {
+      "code": "Me",
+      "name": "Messages",
+      "site": "sms",
+      "repo": "nijatva-messages",
+      "package": "com.nijatva.messages"
+    },
+    {
       "code": "Ta",
       "name": "Tasks",
       "site": "tasks",
@@ -182,13 +161,6 @@
       "site": "vault",
       "repo": "nijatva-drive",
       "package": ""
-    },
-    {
-      "code": "Vi",
-      "name": "Video Player",
-      "site": "video",
-      "repo": "nijatva-video-player",
-      "package": "com.nijatva.videoplayer"
     },
     {
       "code": "We",
