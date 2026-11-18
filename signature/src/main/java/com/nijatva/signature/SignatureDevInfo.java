@@ -6,27 +6,27 @@ package com.nijatva.signature;
  * Rewritten by {@code tools/generate_devinfo.py}, which reads the figures from
  * GitHub and from {@code tools/apps.json}. Edit those, then run the script.
  *
- * Repositories:  36
- * Apps planned:  24
- * With code:     10
- * Figures read:  17 November 2026
+ * Repositories:  22
+ * Apps planned:  25
+ * With code:     11
+ * Figures read:  18 November 2026
  */
 public final class SignatureDevInfo {
 
     /** Public repositories on github.com/vasudev-work. */
-    public static final int REPOSITORIES = 36;
+    public static final int REPOSITORIES = 22;
 
     /** Apps in the Nijatva suite, from tools/apps.json. */
-    public static final int APPS_PLANNED = 24;
+    public static final int APPS_PLANNED = 25;
 
     /** Apps that already have a repository. */
-    public static final int WITH_CODE = 10;
+    public static final int WITH_CODE = 11;
 
     /** The day the figures above were read, as it appears on the card. */
-    public static final String FIGURES_DATE = "17 November 2026";
+    public static final String FIGURES_DATE = "18 November 2026";
 
     /** Short codes of the apps with a repository, in manifest order. */
-    public static final String[] APP_CODES = {"Br", "Ca", "Cm", "Co", "Di", "Fi", "Ga", "Mu", "Me", "Va"};
+    public static final String[] APP_CODES = {"Br", "Ca", "Cm", "Co", "Di", "Fi", "Ga", "Mu", "Me", "Tr", "Va"};
 
     /**
      * The whole suite, in manifest order:
@@ -58,6 +58,7 @@ public final class SignatureDevInfo {
         {"Rs", "RSS", "rss", "", ""},
         {"Me", "Messages", "sms", "nijatva-messages", "com.nijatva.messages"},
         {"Ta", "Tasks", "tasks", "", ""},
+        {"Tr", "Translate", "translate", "nijatva-translate", "com.nijatva.translate"},
         {"Va", "Vault", "vault", "nijatva-drive", ""},
         {"We", "Weather", "weather", "", ""},
     };

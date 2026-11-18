@@ -156,6 +156,13 @@
       "package": ""
     },
     {
+      "code": "Tr",
+      "name": "Translate",
+      "site": "translate",
+      "repo": "nijatva-translate",
+      "package": "com.nijatva.translate"
+    },
+    {
       "code": "Va",
       "name": "Vault",
       "site": "vault",

@@ -89,6 +89,7 @@ git am /path/to/patches/nijatva-<repo>.patch
 | **Contacts** `com.nijatva.contacts` | Java | Patch | Patch adds the kit, both activities and a Nijatva section in Settings. |
 | **Dialer** `com.nijatva.dialer` | Java | Patch | Patch makes its two activities thin subclasses and removes the old screens. |
 | **Messages** `com.nijatva.messages` | Java | Patch | Patch adds the kit and a Settings sheet with Appearance / Developer / set-as-default SMS. |
+| **Translate** `com.nijatva.translate` | Kotlin · Compose | Module | Add the dependency, Settings → Nijatva rows open both intents. No patch exists. |
 
 ---
 
