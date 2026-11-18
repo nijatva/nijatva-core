@@ -37,7 +37,8 @@ dependencies {
 }
 
 group = "com.nijatva"
-version = "1.0.0"
+// Overridden by -PreleaseVersion=<tag> in publish.yml, so a release tag is the version.
+version = (findProperty("releaseVersion") as String?) ?: "1.0.0"
 
 publishing {
     publications {
@@ -47,8 +48,16 @@ publishing {
         }
     }
     repositories {
-        // `./gradlew :signature:publishToMavenLocal` for local app builds.
-        // Add a GitHub Packages repository here when the suite gets CI.
+        // `./gradlew :signature:publishToMavenLocal` for a quick local iteration.
         mavenLocal()
+        // The path every app and every CI run uses.
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/nijatva/nijatva-core")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR") ?: ""
+                password = System.getenv("GITHUB_TOKEN") ?: ""
+            }
+        }
     }
 }

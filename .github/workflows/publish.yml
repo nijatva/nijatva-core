@@ -1,0 +1,52 @@
+name: publish
+
+# Publishes com.nijatva:signature to GitHub Packages, so apps stop needing
+# mavenLocal or a committed AAR. Runs on a release, or by hand with a version.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish, for example 1.0.1'
+        required: true
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # The repository has no gradle wrapper, so Gradle comes from the action.
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+
+      - name: Android SDK platform for compileSdk 34
+        run: |
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-34" "build-tools;34.0.0" > /dev/null
+
+      - name: Publish
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          else
+            VERSION="${{ inputs.version }}"
+          fi
+          echo "publishing com.nijatva:signature:$VERSION"
+          gradle :signature:publish -PreleaseVersion="$VERSION" --no-daemon --stacktrace

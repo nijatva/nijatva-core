@@ -10,27 +10,37 @@ Two routes. Pick per app.
 
 ## A. Module route — 4 steps
 
-**1. Publish the module once** (in the `nijatva-core` clone):
-
-```sh
-./gradlew :signature:publishToMavenLocal
-```
-
-**2. Let the app resolve `mavenLocal()`** — `settings.gradle.kts`:
+**1. Let the app resolve the module** — `settings.gradle.kts`. CI and every app on
+another machine use GitHub Packages; `mavenLocal()` stays for a quick local loop.
 
 ```kotlin
 dependencyResolutionManagement {
-    repositories { google(); mavenCentral(); mavenLocal() }
+    repositories {
+        google(); mavenCentral()
+        maven {
+            name = "NijatvaGitHubPackages"
+            url = uri("https://maven.pkg.github.com/nijatva/nijatva-core")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+        mavenLocal()   // local iteration only; never the CI path
+    }
 }
 ```
 
-**3. Add the dependency** — `app/build.gradle.kts`:
+`publish.yml` in `nijatva-core` publishes `:signature` on a release, using the tag
+as the version. To publish by hand: `./gradlew :signature:publish
+-PreleaseVersion=1.0.1` with `GITHUB_ACTOR` and `GITHUB_TOKEN` exported.
+
+**2. Add the dependency** — `app/build.gradle.kts`:
 
 ```kotlin
 dependencies { implementation("com.nijatva:signature:1.0.0") }
 ```
 
-**4. Open the screens** from wherever the app keeps its settings:
+**3. Open the screens** from wherever the app keeps its settings:
 
 ```java
 startActivity(Signature.appearance(this));   // Appearance: theme + accent + dynamic colour
