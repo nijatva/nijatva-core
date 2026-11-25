@@ -1,180 +1,368 @@
 {
   "owner": "vasudev-work",
+  "generated_from": "nijatva-suite/docs/APP-REGISTRY.json",
+  "generated": "2026-11-24",
+  "counts": {
+    "apps_in_28_plan": 28,
+    "apps_total_tracked": 32,
+    "apps_with_repo": 17,
+    "apps_with_releases": 11,
+    "apps_indexed": 1,
+    "apps_with_signed_release": 1,
+    "apps_applying_no_gms_check": 1
+  },
   "apps": [
     {
       "code": "Ap",
       "name": "App Manager",
       "site": "appmanager",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.appmanager",
+      "phase": 4,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
+    },
+    {
+      "code": "As",
+      "name": "App Store",
+      "site": "appstore",
+      "repo": "nijatva-appstore",
+      "package": "com.nijatva.appstore",
+      "phase": 0,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Br",
       "name": "Browser",
       "site": "browser",
       "repo": "nijatva-browser",
-      "package": "in.nijatva.browser"
+      "package": "in.nijatva.browser",
+      "phase": 4,
+      "status": "released",
+      "ui": "Kotlin",
+      "indexed": false
+    },
+    {
+      "code": "Mx",
+      "name": "Browser Mini X",
+      "site": "browserminix",
+      "repo": "nijatva-browser-mini-x",
+      "package": "com.nijatva.mini.x",
+      "phase": 4,
+      "status": "released",
+      "ui": "Kotlin",
+      "indexed": false
     },
     {
       "code": "Ca",
       "name": "Calculator",
-      "site": "calc",
+      "site": "calculator",
       "repo": "nijatva-calc",
-      "package": "com.nijatva.calc"
+      "package": "com.nijatva.calc",
+      "phase": 1,
+      "status": "unverified",
+      "ui": "Compose",
+      "indexed": false
     },
     {
-      "code": "Cl",
+      "code": "Cal",
       "name": "Calendar",
       "site": "calendar",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.calendar",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
-      "code": "Cm",
+      "code": "Cam",
       "name": "Camera",
       "site": "camera",
       "repo": "nijatva-camera",
-      "package": "com.nijatva.camera"
+      "package": "com.nijatva.camera",
+      "phase": 3,
+      "status": "released",
+      "ui": "Kotlin",
+      "indexed": false
     },
     {
-      "code": "Ck",
+      "code": "Cl",
       "name": "Clock",
       "site": "clock",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.clock",
+      "phase": 1,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Co",
       "name": "Contacts",
       "site": "contacts",
       "repo": "nijatva-contacts",
-      "package": "com.nijatva.contacts"
+      "package": "com.nijatva.contacts",
+      "phase": 3,
+      "status": "released",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "Di",
-      "name": "Dialer",
-      "site": "dialer",
-      "repo": "nijatva-dialer",
-      "package": "com.nijatva.dialer"
-    },
-    {
-      "code": "De",
       "name": "Device Info",
       "site": "deviceinfo",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.deviceinfo",
+      "phase": 2,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
+    },
+    {
+      "code": "Da",
+      "name": "Dialer",
+      "site": "dialer",
+      "repo": "nijatva-dialer",
+      "package": "com.nijatva.dialer",
+      "phase": 3,
+      "status": "released",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "Ex",
       "name": "Expenses",
       "site": "expenses",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.expenses",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Fi",
       "name": "Files",
       "site": "files",
       "repo": "nijatva-file",
-      "package": "com.nijatva.file"
+      "package": "com.nijatva.file",
+      "phase": 1,
+      "status": "code-only",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "Ga",
       "name": "Gallery",
       "site": "gallery",
       "repo": "nijatva-gallery",
-      "package": "com.nijatva.gallery"
+      "package": "com.nijatva.gallery",
+      "phase": 2,
+      "status": "released",
+      "ui": "Kotlin, no Compose",
+      "indexed": false
     },
     {
-      "code": "Kb",
+      "code": "Ke",
       "name": "Keyboard",
       "site": "keyboard",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.keyboard",
+      "phase": 4,
+      "status": "code-only",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "La",
       "name": "Launcher",
       "site": "launcher",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.launcher",
+      "phase": 4,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
+    },
+    {
+      "code": "Me",
+      "name": "Messages",
+      "site": "messages",
+      "repo": "nijatva-messages",
+      "package": "com.nijatva.messages",
+      "phase": 3,
+      "status": "released",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "Mu",
       "name": "Music",
       "site": "music",
       "repo": "nijatva-music-player",
-      "package": "com.nijatva.music.player"
+      "package": "com.nijatva.music.player",
+      "phase": 2,
+      "status": "released",
+      "ui": "Compose Multiplatform",
+      "indexed": false
     },
     {
       "code": "No",
       "name": "Notes",
       "site": "notes",
-      "repo": null,
-      "package": ""
+      "repo": "nijatva-notes",
+      "package": "in.nijatva.notes",
+      "phase": 1,
+      "status": "released",
+      "ui": "View/Java",
+      "indexed": false
     },
     {
       "code": "Pd",
       "name": "PDF",
       "site": "pdf",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.pdf",
+      "phase": 2,
+      "status": "code-only",
+      "ui": "View/Java",
+      "indexed": false
+    },
+    {
+      "code": "Pe",
+      "name": "Photo Editor",
+      "site": "photoeditor",
+      "repo": "nijatva-photo-editor",
+      "package": "com.nijatva.photo.editor",
+      "phase": 2,
+      "status": "released",
+      "ui": "Kotlin",
+      "indexed": true
+    },
+    {
+      "code": "Ph",
+      "name": "Photos",
+      "site": "photos",
+      "repo": "nijatva-photos",
+      "package": "com.nijatva.photos",
+      "phase": 2,
+      "status": "released",
+      "ui": "Kotlin",
+      "indexed": false
     },
     {
       "code": "Qr",
       "name": "QR Code",
-      "site": "qr",
+      "site": "qrcode",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.qr",
+      "phase": 1,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
+    },
+    {
+      "code": "Rd",
+      "name": "Reader",
+      "site": "reader",
+      "repo": "nijatva-reader-engine",
+      "package": "com.nijatva.reader",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Kotlin",
+      "indexed": false
     },
     {
       "code": "Re",
       "name": "Recorder",
       "site": "recorder",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.recorder",
+      "phase": 2,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
-      "code": "Rs",
+      "code": "Rss",
       "name": "RSS",
       "site": "rss",
       "repo": null,
-      "package": ""
-    },
-    {
-      "code": "Me",
-      "name": "Messages",
-      "site": "sms",
-      "repo": "nijatva-messages",
-      "package": "com.nijatva.messages"
+      "package": "com.nijatva.rss",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Ta",
       "name": "Tasks",
       "site": "tasks",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.tasks",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Tr",
       "name": "Translate",
       "site": "translate",
       "repo": "nijatva-translate",
-      "package": "com.nijatva.translate"
+      "package": "com.nijatva.translate",
+      "phase": 3,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
     },
     {
       "code": "Va",
       "name": "Vault",
       "site": "vault",
       "repo": "nijatva-drive",
-      "package": ""
+      "package": "com.nijatva.vault",
+      "phase": 3,
+      "status": "unverified",
+      "ui": "React Native (Expo)",
+      "indexed": false
+    },
+    {
+      "code": "Vp",
+      "name": "Video Player",
+      "site": "videoplayer",
+      "repo": "nijatva-video-player",
+      "package": "com.nijatva.video.player",
+      "phase": 2,
+      "status": "code-only",
+      "ui": "Compose + Media3",
+      "indexed": false
     },
     {
       "code": "We",
       "name": "Weather",
       "site": "weather",
       "repo": null,
-      "package": ""
+      "package": "com.nijatva.weather",
+      "phase": 2,
+      "status": "code-only",
+      "ui": "Compose",
+      "indexed": false
+    },
+    {
+      "code": "Ws",
+      "name": "WorkSpace",
+      "site": "workspace",
+      "repo": "Nijatva-WorkSpace",
+      "package": "com.nijatva.workspace",
+      "phase": 0,
+      "status": "code-only",
+      "ui": "View/Java",
+      "indexed": false
     }
   ]
 }
